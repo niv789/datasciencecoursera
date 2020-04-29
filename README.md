@@ -14,10 +14,15 @@ nitrate: the level of nitrate PM in the air on that date (measured in micrograms
 For this programming assignment you will need to unzip this file and create the directory 'specdata'. Once you have unzipped the zip file, do not make any modifications to the files in the 'specdata' directory. In each file you'll notice that there are many days where either sulfate or nitrate (or both) are missing (coded as NA). 
 This is common with air pollution monitoring data in the United States.
 
-PART 1
+PART 1-pollutantmean()
+-----------------------
 
-Part 1
 Write a function named 'pollutantmean' that calculates the mean of a pollutant (sulfate or nitrate) across a specified list of monitors.
 The function 'pollutantmean' takes three arguments: 'directory', 'pollutant', and 'id'. Given a vector monitor ID numbers, 'pollutantmean'
 reads that monitors' particulate matter data from the directory specified in the 'directory' argument and returns the 
 mean of the pollutant across all of the monitors, ignoring any missing values coded as NA.
+
+PART 2-complete()
+-----------------
+
+Write a function that reads a directory full of files and reports the number of completely observed cases in each data file. The function should return a data frame where the first column is the name of the file and the second column is the number of complete cases.
